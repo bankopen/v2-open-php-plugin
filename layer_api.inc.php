@@ -9,6 +9,10 @@ Class LayerApi{
 	const BASE_URL_SANDBOX = "https://sandbox-icp-api.bankopen.co/api";
     const BASE_URL_UAT = "https://icp-api.bankopen.co/api";
 
+	private $env='';
+	private $access_key='';
+	private $secret_key='';
+	
     public function __construct($env,$access_key,$secret_key){
 
         $this->env = $env;
